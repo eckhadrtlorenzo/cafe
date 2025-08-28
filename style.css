@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(252, 252, 252);
+    color: rgba(0, 0, 0, 0.719);
+}
+main{
+background-color: rgb(153, 14, 14);
+color: rgb(0, 0, 0);
+ height: 80px;
+
+}
+
+header{
+    background-color: rgb(255, 0, 0);
+    height: 80px;
+    }
+    footer{
+    background-color: rgba(132,116,83,255);
+    height: 350px;
+}
+
