@@ -1,28 +1,29 @@
- //vetores de objeto
+
+  //vetores de objeto
 
 
 const Cafe = [
 
   { id:"Nenhum", nome:"Nenhum", preco: 0 },
-  { id:"cafe_comum", nome: "Café comum", preco: 3.00 },
-  { id:"descafeinado", nome: "Café descafeinado", preco: 6.50 },
-  { id:"cafeina_adicionada", nome: "Café com cafeína adicionada", preco: 10.00 },
-  { id:"Cafe_leite", nome: "Café com leite", preco: 4.50 },
-  { id:"Cafe_expresso", nome: "Café expresso", preco: 5.50 },
-  { id:"Cafe_instantaneo", nome: "Café instantaneo", preco: 4.00 },
-  { id:"Cafe_gourmet", nome:"Café gourmet", preco: 10.00 },
+  { id:"Cafe_comum", nome: "Café comum", preco: 1.00 },
+  { id:"descafeinado", nome: "Café descafeinado", preco: 1.50 },
+  { id:"Cafeina_adicionada", nome: "Café com cafeína adicionada", preco: 2.00 },
+  { id:"Cafe_leite", nome: "Café com leite", preco: 2.50 },
+  { id:"Cafe_expresso", nome: "Café expresso", preco: 4.50 },
+  { id:"Cafe_instantaneo", nome: "Café instantaneo", preco: 1.00 },
+  { id:"Cafe_gourmet", nome:"Café gourmet", preco: 5.00 },
   { id:"Capuccino", nome:"Capuccino", preco: 8.00 },
-  { id:"Mocha", nome:"Mocha", preco: 10.00 }
+  { id:"Mocha", nome:"Mocha", preco: 8.50 }
   
 ];
 
 const Chas = [
   { id:"Nenhum", nome:"Nenhum", preco: 0 },
-  { id:"Cha_preto", nome:"Chá preto", preco: 7.50 },
-  { id:"Cha_verde", nome:"Chá verde", preco: 8.00 },
-  { id:"Cha_branco", nome:"Chá branco", preco: 10.00 },
-  { id:"Cha_oolong", nome:"Chá oolong", preco: 12.99 },
-  { id:"Cha_matcha", nome:"Chá matcha", preco: 12.00 }
+  { id:"Cha_preto", nome:"Chá preto", preco: 2.00 },
+  { id:"Cha_verde", nome:"Chá verde", preco: 2.00 },
+  { id:"Cha_branco", nome:"Chá branco", preco: 3.00 },
+  { id:"Cha_oolong", nome:"Chá oolong", preco: 4.99 },
+  { id:"Cha_matcha", nome:"Chá matcha", preco: 8.25 }
 
 ];
 
@@ -32,20 +33,14 @@ const temperatura = [
   { id:"Gelado", nome:"Gelado", preco: 0 },
 ];
 
-const temperatura1 = [
-  { id:"Quente", nome:"Quente", preco: 0 },
-  { id:"Morno", nome:"Morno", preco: 0 },
-  { id:"Gelado", nome:"Gelado", preco: 0 },
-];
-
 const Copos = [
   { id:"Nenhum", nome:"Nenhum", preco: 0 },
-  { id:"copo_50ml", nome: "Copo 50 ml", preco: 11.99 },
-  {id:"copo_100ml", nome: "Copo 100ml ", preco: 15.90 },
-  { id:"copo_200ml", nome: "Copo 200ml", preco: 20.00 },
-  { id:"copo_300ml", nome: "Copo 300ml", preco: 25.00  },
-  { id:"copo_440", nome: "Copo 440ml", preco: 30.00 },
-  { id:"copo_500ml", nome: "Copo 500ml", preco: 35.00 }
+  { id:"copo_50ml", nome: "Copo 50 ml", preco: 1.99 },
+  {id:"copo_100ml", nome: "Copo 100ml ", preco: 2.50 },
+  { id:"copo_200ml", nome: "Copo 200ml", preco: 3.50 },
+  { id:"copo_300ml", nome: "Copo 300ml", preco: 4.25  },
+  { id:"copo_440", nome: "Copo 440ml", preco: 4.50 },
+  { id:"copo_500ml", nome: "Copo 500ml", preco: 6.00 }
   ];
 
   const Xicaras = [
@@ -59,36 +54,49 @@ const Copos = [
 
   const Chocolate = [
     { id:"Nenhum", nome:"Nenhum", preco: 0 },
-    { id:"Chocolate_leite", nome:"Chocolate ao leite", preco: 4.50 },
-    { id:"Chocolate_branco", nome:"Chocolate branco", preco: 5.25 },
-    { id:"Chocolate_amargo", nome:"Chocolate amargo", preco: 5.25 },
-    { id:"Chocolate_pistache", nome:"Chocolate de pistache", preco: 6.50 }
+    { id:"Chocolate_leite", nome:"Chocolate ao leite", preco: 1.50 },
+    { id:"Chocolate_branco", nome:"Chocolate branco", preco: 1.25 },
+    { id:"Chocolate_amargo", nome:"Chocolate amargo", preco: 1.50 },
+    { id:"Chocolate_pistache", nome:"Chocolate de pistache", preco: 3.50 }
   
   ];
 
   const acucar= [
     { id:"Nenhum", nome:"Nenhum", preco: 0 },
-    { id:"acucar_cristal", nome: "açúcar cristal", preco: 1.50 },
-    { id:"acucar_demera", nome: "açúcar demera", preco: 2.00 },
-    { id:"acucar_mascavo", nome: "açúcar mascavo", preco: 2.50 }
+    { id:"acucar_cristal", nome: "açúcar cristal", preco: 1.00 },
+    { id:"acucar_demera", nome: "açúcar demera", preco: 1.00 },
+    { id:"acucar_mascavo", nome: "açúcar mascavo", preco: 1.50 }
   ];  
 
   const caldas=[
     { id:"Nenhum", nome:"Nenhum", preco: 0 },
-    { id:"calda_caramelo", nome: "calda de caramelo", preco: 4.00 },
-    { id:"calda_chocolate", nome: "calda de chocolate", preco: 4.50 },
-    { id:"calda_morango", nome: "calda de morango", preco: 4.00 },
-    { id:"calda_pistache", nome: "calda de pistache", preco: 5.50 }
+    { id:"calda_caramelo", nome: "calda de caramelo", preco: 1.00 },
+    { id:"calda_chocolate", nome: "calda de chocolate", preco: 2.00 },
+    { id:"calda_morango", nome: "calda de morango", preco: 1.00 },
+    { id:"calda_pistache", nome: "calda de pistache", preco: 2.50 }
 
   ];
  
   const leites=[
     { id:"Nenhum", nome:"Nenhum", preco: 0 },
-    { id:"leite_integral", nome: "leite integral", preco: 3.00 },
-    { id:"leite_desnatado", nome: "leite desnatado", preco: 3.00 },
-    { id:"leite__amendoas", nome: "leite de amendoas", preco: 5.00 }
+    { id:"leite_integral", nome: "leite integral", preco: 1.00 },
+    { id:"leite_desnatado", nome: "leite desnatado", preco: 1.00 },
+    { id:"leite__amendoas", nome: "leite de amendoas", preco: 2.00 }
 
   ];
+
+
+  const donuts_D=[
+    {id:"nenhum", nome:"nenhum", preço:0},
+    {id:"donut_homer", nome:"homer simpsons", preço: 18.00},
+    {id:"donut_snickers", nome:"snickers", preço: 20.00},
+    {id:"donut_creme_de_avela", nome:"creme de avelã", preço:25.00},
+    {id:"donut_cheesecake", nome:"cheesecake de frutas vermelhas", preço:25.00},
+    {id:"donut_kinder", nome:"kinder bueno", preço: 28.00},
+    {id:"donut_churros", mome:"churros", preço:25.00},
+    {id:"donut_redvelvet", nome:"red velvet", preço:20.00},
+    
+  ]
 
 
 
@@ -188,4 +196,76 @@ function preencherOpcoes(){
 }
 
 
+
+//procurar por id
+
+function procurarPorId(lista, idProcurado) {
+  for (let i = 0; i < lista.length; i++) {
+    if (lista[i].id == idProcurado){
+      return lista[i]; //devolve o objeto encontrado
+    }
+  }
+  return null; //retornar nulo se não encontrar o objeto
+}
 preencherOpcoes();
+
+
+//Tentando gerar o relatorio
+
+function gerarRelatorio(){
+
+  const nome = document.getElementById("nome").value;
+  const CafeId = document.getElementById("Cafe").value;
+  const ChasId = document.getElementById("Chas").value;
+  const temperaturaId = document.getElementById("temperatura").value;
+  const CoposId = document.getElementById("Copos").value;
+  const XicarasId = document.getElementById("Xicaras").value;
+  const ChocolateId = document.getElementById("Chocolate").value;
+  const acucarId = document.getElementById("acucar").value;
+  const caldasId = document.getElementById("caldas").value;
+  const leitesId = document.getElementById("leites").value;
+  const forma_pagamentoId = document.getElementById("forma_pagamento").value;
+  const quantidade = document.getElementById("quantidade").value;
+
+
+  var Cafe1 = procurarPorId(Cafe, CafeId);
+  var Chas1 = procurarPorId(Chas, ChasId);
+  var temperatura1 = procurarPorId(temperatura, temperaturaId);
+  var Copos1 = procurarPorId(Copos, CoposId);
+  var Xicaras1 = procurarPorId(Xicaras, XicarasId);
+  var Chocolate1 = procurarPorId(Chocolate, ChocolateId);
+  var acucar1 = procurarPorId(acucar, acucarId);
+  var caldas1 = procurarPorId(caldas, caldasId);
+  var leites1 = procurarPorId(leites, leitesId);
+
+
+  const custoCafe = Cafe1.preco * quantidade;
+  const custoChas = Chas1.preco * quantidade;
+  const custotemperatura = temperatura1.preco * quantidade;
+  const custoCopos = Copos1.preco * quantidade;
+  const custoXicaras = Xicaras1.preco * quantidade;
+  const custoChocolate = Chocolate1.preco * quantidade; 
+  const custoacucar = acucar1.preco * quantidade;
+  const custocaldas = caldas1.preco * quantidade;
+  const custoleites = leites1.preco * quantidade;
+  const total = custoCafe + custoChas + custoChocolate + custoCopos + custoXicaras + custoacucar + custocaldas + custoleites + custotemperatura;
+
+  const relatorioHTML = `
+  <h2>Pedido final</h2>
+  <p><strong>Nome do cliente:</strong>${nome}<p>
+  <p><strong>Café</strong> ${Cafe1.nome} - R$ ${custoCafe.toFixed(2)}</p>
+  <p><strong>Chá:</strong> ${Chas1.nome} - R$ ${custoChas.toFixed(2)}</p>
+  <p><strong>Temperatura:</strong> ${temperatura1.nome} - R$ ${custotemperatura.toFixed(2)}</p>
+  <p><strong>Copos:</strong> ${Copos1.nome} - R$ ${custoCopos.toFixed(2)}</p>
+  <p><strong>Xicara:</strong> ${Xicaras1.nome} - R$ ${custoXicaras.toFixed(2)}</p>
+  <p><strong>Açucar:</strong> ${acucar1.nome} - R$ ${custoacucar.toFixed(2)}</p>
+  <p><strong>Chocolate:</strong> ${Chocolate1.nome} - R$ ${custoChocolate.toFixed(2)}</p>
+  <p><strong>Caldas:</strong> ${caldas1.nome} - R$ ${custocaldas.toFixed(2)}</p>
+  <p><strong>Leite:</strong> ${leites1.nome} - R$ ${custoleites.toFixed(2)}</p>
+  <p><strong>Forma de pagamento:</strong> ${forma_pagamentoId}<p>
+  <p><strong>Total:</strong> ${total.toFixed(2)}<p>
+`;
+
+  document.getElementById("relatorio").innerHTML = relatorioHTML;
+
+}
