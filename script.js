@@ -85,20 +85,31 @@ const Copos = [
 
   ];
 
+  const donuts_S=[
+    { id:"Nenhum", nome:"Nenhum", preco: 0 },
+    { id:"donut_americano", nome:"Americano", preco: 28.00},
+    { id:"donut_dog", nome:"Cat Hot", preco: 22.00},
+    { id:"donut_dog2", nome:"Cat Hot duplo", preco: 26.00},
+    { id:"donut_burguer", nome:"Cat burguer", preco: 28.00},
+    { id:"donut_frances", nome:"Francês", preco: 29.00},
+    { id:"donut_margherita", nome:"Margherita", preco: 26.00 },
+    { id:"donut_tropical", nome:"Tropical Chicken", preco: 27.00 }
+
+  ];
 
   const donuts_D=[
-    {id:"nenhum", nome:"nenhum", preço:0},
-    {id:"donut_homer", nome:"homer simpsons", preço: 18.00},
-    {id:"donut_snickers", nome:"snickers", preço: 20.00},
-    {id:"donut_creme_de_avela", nome:"creme de avelã", preço:25.00},
-    {id:"donut_cheesecake", nome:"cheesecake de frutas vermelhas", preço:25.00},
-    {id:"donut_kinder", nome:"kinder bueno", preço: 28.00},
-    {id:"donut_churros", mome:"churros", preço:25.00},
-    {id:"donut_redvelvet", nome:"red velvet", preço:20.00},
-    
-  ]
-
-
+    {id:"nenhum", nome:"nenhum", preco:0},
+    {id:"donut_homer", nome:"homer simpsons", preco: 18.00},
+    {id:"donut_snickers", nome:"snickers", preco: 20.00},
+    {id:"donut_creme_de_avela", nome:"creme de avelã", preco:25.00},
+    {id:"donut_cheesecake", nome:"cheesecake de frutas vermelhas", preco:25.00},
+    {id:"donut_kinder", nome:"kinder bueno", preco: 28.00},
+    {id:"donut_redvelvet", nome:"red velvet", preco:20.00},
+    {id:"donut_rafaello", nome:"rafaello", preco:25.00},
+    {id:"donut_tonn", nome:"tonn fraise", preco:25.00},
+    {id:"donut_pistache", nome:"pistache", preco:25.00},
+      
+  ];
 
 function preencherOpcoes(){
 //funções pra aparecer por trás 
@@ -184,13 +195,22 @@ function preencherOpcoes(){
   selectleites.appendChild(option);
  }
 
-  const selecttemperatura1 = document.getElementById("temperatura1");
- for (let i = 0; i < temperatura1.length; i++){
-  const item = temperatura1[i];
+ const selectdonuts_S = document.getElementById("donuts_S");
+ for (let i = 0; i < donuts_S.length; i++){
+  const item = donuts_S[i];
   const option = document.createElement("option");
   option.value = item.id;
   option.textContent = item.nome;
-  selecttemperatura1.appendChild(option);
+  selectdonuts_S.appendChild(option);
+ }
+
+ const selectdonuts_D = document.getElementById("donuts_D");
+ for (let i = 0; i < donuts_D.length; i++){
+  const item = donuts_D[i];
+  const option = document.createElement("option");
+  option.value = item.id;
+  option.textContent = item.nome;
+  selectdonuts_D.appendChild(option);
  }
 
 }
@@ -226,6 +246,8 @@ function gerarRelatorio(){
   const leitesId = document.getElementById("leites").value;
   const forma_pagamentoId = document.getElementById("forma_pagamento").value;
   const quantidade = document.getElementById("quantidade").value;
+  const donuts_S_Id = document.getElementById("donuts_S").value;
+  const donuts_D_Id = document.getElementById("donuts_D").value;
 
 
   var Cafe1 = procurarPorId(Cafe, CafeId);
@@ -237,6 +259,8 @@ function gerarRelatorio(){
   var acucar1 = procurarPorId(acucar, acucarId);
   var caldas1 = procurarPorId(caldas, caldasId);
   var leites1 = procurarPorId(leites, leitesId);
+  var donuts_S1 = procurarPorId (donuts_S, donuts_S_Id);
+  var donuts_D1 = procurarPorId (donuts_D, donuts_D_Id);
 
 
   const custoCafe = Cafe1.preco * quantidade;
@@ -248,7 +272,9 @@ function gerarRelatorio(){
   const custoacucar = acucar1.preco * quantidade;
   const custocaldas = caldas1.preco * quantidade;
   const custoleites = leites1.preco * quantidade;
-  const total = custoCafe + custoChas + custoChocolate + custoCopos + custoXicaras + custoacucar + custocaldas + custoleites + custotemperatura;
+  const custodonuts_S = donuts_S1.preco * quantidade;
+  const custodonuts_D = donuts_D1.preco * quantidade;
+  const total = custoCafe + custoChas + custoChocolate + custoCopos + custoXicaras + custoacucar + custocaldas + custoleites + custotemperatura + custodonuts_S + custodonuts_D;
 
   const relatorioHTML = `
   <h2>Pedido final</h2>
@@ -262,6 +288,7 @@ function gerarRelatorio(){
   <p><strong>Chocolate:</strong> ${Chocolate1.nome} - R$ ${custoChocolate.toFixed(2)}</p>
   <p><strong>Caldas:</strong> ${caldas1.nome} - R$ ${custocaldas.toFixed(2)}</p>
   <p><strong>Leite:</strong> ${leites1.nome} - R$ ${custoleites.toFixed(2)}</p>
+  <p><strong>Comida:</strong> ${donuts_S1.nome} - R$ ${custodonuts_S.toFixed(2)} ${donuts_D1.nome} - R$ ${custodonuts_D.toFixed(2)}</p>
   <p><strong>Forma de pagamento:</strong> ${forma_pagamentoId}<p>
   <p><strong>Total:</strong> ${total.toFixed(2)}<p>
 `;
