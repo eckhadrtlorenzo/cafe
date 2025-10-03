@@ -30,20 +30,26 @@ const Chas = [
 const temperatura = [
   { id:"Quente", nome:"Quente", preco: 0 },
   { id:"Morno", nome:"Morno", preco: 0 },
-  { id:"Gelado", nome:"Gelado", preco: 0 },
+  { id:"Gelado", nome:"Gelado", preco: 0 }
 ];
 
-const Copos = [
+const temperatura_cha = [
+  { id:"Quente", nome:"Quente", preco: 0 },
+  { id:"Morno", nome:"Morno", preco: 0 },
+  { id:"Gelado", nome:"Gelado", preco: 0 }
+];
+
+const Copos_cafe = [
   { id:"Nenhum", nome:"Nenhum", preco: 0 },
   { id:"copo_50ml", nome: "Copo 50 ml", preco: 1.99 },
-  {id:"copo_100ml", nome: "Copo 100ml ", preco: 2.50 },
+  { id:"copo_100ml", nome: "Copo 100ml ", preco: 2.50 },
   { id:"copo_200ml", nome: "Copo 200ml", preco: 3.50 },
   { id:"copo_300ml", nome: "Copo 300ml", preco: 4.25  },
   { id:"copo_440", nome: "Copo 440ml", preco: 4.50 },
   { id:"copo_500ml", nome: "Copo 500ml", preco: 6.00 }
   ];
 
-  const Xicaras = [
+  const Xicaras_cafe = [
     { id:"Nenhum", nome:"Nenhum", preco: 0 },
     { id:"xicara_100ml", nome: " Xícara 100ml", preco: 5.00 },
     { id:"xicara_180ml", nome: "Xícara 180ml", preco: 8.00 },
@@ -52,7 +58,7 @@ const Copos = [
     { id:"xicara_325ml", nome: "Xícara 325ml", preco: 16.00 }
   ];
 
-  const Chocolate = [
+  const Chocolate_cafe = [
     { id:"Nenhum", nome:"Nenhum", preco: 0 },
     { id:"Chocolate_leite", nome:"Chocolate ao leite", preco: 1.50 },
     { id:"Chocolate_branco", nome:"Chocolate branco", preco: 1.25 },
@@ -61,14 +67,14 @@ const Copos = [
   
   ];
 
-  const acucar= [
+  const acucar_cafe= [
     { id:"Nenhum", nome:"Nenhum", preco: 0 },
     { id:"acucar_cristal", nome: "açúcar cristal", preco: 1.00 },
     { id:"acucar_demera", nome: "açúcar demera", preco: 1.00 },
     { id:"acucar_mascavo", nome: "açúcar mascavo", preco: 1.50 }
   ];  
 
-  const caldas=[
+  const caldas_cafe=[
     { id:"Nenhum", nome:"Nenhum", preco: 0 },
     { id:"calda_caramelo", nome: "calda de caramelo", preco: 1.00 },
     { id:"calda_chocolate", nome: "calda de chocolate", preco: 2.00 },
@@ -77,7 +83,57 @@ const Copos = [
 
   ];
  
-  const leites=[
+  const leites_cafe=[
+    { id:"Nenhum", nome:"Nenhum", preco: 0 },
+    { id:"leite_integral", nome: "leite integral", preco: 1.00 },
+    { id:"leite_desnatado", nome: "leite desnatado", preco: 1.00 },
+    { id:"leite__amendoas", nome: "leite de amendoas", preco: 2.00 }
+
+  ];const Copos_cha = [
+  { id:"Nenhum", nome:"Nenhum", preco: 0 },
+  { id:"copo_50ml", nome: "Copo 50 ml", preco: 1.99 },
+  { id:"copo_100ml", nome: "Copo 100ml ", preco: 2.50 },
+  { id:"copo_200ml", nome: "Copo 200ml", preco: 3.50 },
+  { id:"copo_300ml", nome: "Copo 300ml", preco: 4.25  },
+  { id:"copo_440", nome: "Copo 440ml", preco: 4.50 },
+  { id:"copo_500ml", nome: "Copo 500ml", preco: 6.00 }
+  ];
+
+  const Xicaras_cha = [
+    { id:"Nenhum", nome:"Nenhum", preco: 0 },
+    { id:"xicara_100ml", nome: " Xícara 100ml", preco: 5.00 },
+    { id:"xicara_180ml", nome: "Xícara 180ml", preco: 8.00 },
+    { id:"xicara_200ml", nome: "Xícara 200ml", preco: 10.00 },
+    { id:"xicara_250ml", nome: "Xícara 250ml", preco: 13.00 },
+    { id:"xicara_325ml", nome: "Xícara 325ml", preco: 16.00 }
+  ];
+
+  const Chocolate_cha = [
+    { id:"Nenhum", nome:"Nenhum", preco: 0 },
+    { id:"Chocolate_leite", nome:"Chocolate ao leite", preco: 1.50 },
+    { id:"Chocolate_branco", nome:"Chocolate branco", preco: 1.25 },
+    { id:"Chocolate_amargo", nome:"Chocolate amargo", preco: 1.50 },
+    { id:"Chocolate_pistache", nome:"Chocolate de pistache", preco: 3.50 }
+  
+  ];
+
+  const acucar_cha= [
+    { id:"Nenhum", nome:"Nenhum", preco: 0 },
+    { id:"acucar_cristal", nome: "açúcar cristal", preco: 1.00 },
+    { id:"acucar_demera", nome: "açúcar demera", preco: 1.00 },
+    { id:"acucar_mascavo", nome: "açúcar mascavo", preco: 1.50 }
+  ];  
+
+  const caldas_cha=[
+    { id:"Nenhum", nome:"Nenhum", preco: 0 },
+    { id:"calda_caramelo", nome: "calda de caramelo", preco: 1.00 },
+    { id:"calda_chocolate", nome: "calda de chocolate", preco: 2.00 },
+    { id:"calda_morango", nome: "calda de morango", preco: 1.00 },
+    { id:"calda_pistache", nome: "calda de pistache", preco: 2.50 }
+
+  ];
+ 
+  const leites_cha=[
     { id:"Nenhum", nome:"Nenhum", preco: 0 },
     { id:"leite_integral", nome: "leite integral", preco: 1.00 },
     { id:"leite_desnatado", nome: "leite desnatado", preco: 1.00 },
@@ -87,28 +143,30 @@ const Copos = [
 
   const donuts_S=[
     { id:"Nenhum", nome:"Nenhum", preco: 0 },
-    { id:"donut_americano", nome:"Americano", preco: 28.00},
-    { id:"donut_dog", nome:"Cat Hot", preco: 22.00},
-    { id:"donut_dog2", nome:"Cat Hot duplo", preco: 26.00},
-    { id:"donut_burguer", nome:"Cat burguer", preco: 28.00},
-    { id:"donut_frances", nome:"Francês", preco: 29.00},
-    { id:"donut_margherita", nome:"Margherita", preco: 26.00 },
-    { id:"donut_tropical", nome:"Tropical Chicken", preco: 27.00 }
+    { id:"donut_americano", nome:"Donut Americano", preco: 28.00},
+    { id:"donut_dog", nome:"Donut Cat Hot", preco: 22.00},
+    { id:"donut_dog2", nome:"Donut Cat Hot duplo", preco: 26.00},
+    { id:"donut_burguer", nome:"Donut Cat burguer", preco: 28.00},
+    { id:"donut_frances", nome:"Donut Francês", preco: 29.00},
+    { id:"donut_margherita", nome:"Donut Margherita", preco: 26.00 },
+    { id:"donut_tropical", nome:"Donut Tropical Chicken", preco: 27.00 }
 
   ];
 
   const donuts_D=[
     {id:"nenhum", nome:"nenhum", preco:0},
-    {id:"donut_homer", nome:"homer simpsons", preco: 18.00},
-    {id:"donut_snickers", nome:"snickers", preco: 20.00},
-    {id:"donut_creme_de_avela", nome:"creme de avelã", preco:25.00},
-    {id:"donut_cheesecake", nome:"cheesecake de frutas vermelhas", preco:25.00},
-    {id:"donut_kinder", nome:"kinder bueno", preco: 28.00},
-    {id:"donut_redvelvet", nome:"red velvet", preco:20.00},
-    {id:"donut_rafaello", nome:"rafaello", preco:25.00},
-    {id:"donut_tonn", nome:"tonn fraise", preco:25.00},
-    {id:"donut_pistache", nome:"pistache", preco:25.00},
-      
+    {id:"donut_homer", nome:"Donut Homer Simpsons", preco: 18.00},
+    {id:"donut_snickers", nome:"Donut Snickers", preco: 20.00},
+    {id:"donut_creme_de_avela", nome:"Donut Creme de avelã", preco:25.00},
+    {id:"donut_cheesecake", nome:"Donut Cheesecake de frutas vermelhas", preco:25.00},
+    {id:"donut_kinder", nome:"Donut Kinder bueno", preco: 28.00},
+    {id:"donut_redvelvet", nome:"Donut Red velvet", preco:20.00},
+    {id:"donut_rafaello", nome:"Donut Rafaello", preco:25.00},
+    {id:"donut_tonn", nome:"Donut Tonn fraise", preco:25.00},
+    {id:"donut_pistache", nome:"Donut de pistache", preco:25.00},
+    {id:"donut_canela", nome:"Donut Açúcar e canela", preco:15.00}
+    
+    
   ];
 
 function preencherOpcoes(){
@@ -141,7 +199,7 @@ function preencherOpcoes(){
   selectChas.appendChild(option);
  }
  
- const selectCopos = document.getElementById("Copos");
+ const selectCopos_cafe = document.getElementById("Copos_cafe");
  for (let i = 0; i < Copos.length; i++){
   const item = Copos[i];
   const option = document.createElement("option");
@@ -150,7 +208,7 @@ function preencherOpcoes(){
   selectCopos.appendChild(option);
  }
 
- const selectXicaras = document.getElementById("Xicaras");
+ const selectXicaras_cafe = document.getElementById("Xicaras_cafe");
  for (let i = 0; i < Xicaras.length; i++){
   const item = Xicaras[i];
   const option = document.createElement("option");
@@ -159,7 +217,7 @@ function preencherOpcoes(){
   selectXicaras.appendChild(option);
  }
  
- const selectChocolate = document.getElementById("Chocolate");
+ const selectChocolate_cafe = document.getElementById("Chocolate_cafe");
  for (let i = 0; i < Chocolate.length; i++){
   const item = Chocolate[i];
   const option = document.createElement("option");
@@ -168,7 +226,7 @@ function preencherOpcoes(){
   selectChocolate.appendChild(option);
  }
 
-  const selectacucar = document.getElementById("acucar");
+  const selectacucar_cafe = document.getElementById("acucar_cafe");
  for (let i = 0; i < acucar.length; i++){
   const item = acucar[i];
   const option = document.createElement("option");
@@ -177,7 +235,7 @@ function preencherOpcoes(){
   selectacucar.appendChild(option);
  }
  
-  const selectcaldas = document.getElementById("caldas");
+  const selectcaldas_cafe = document.getElementById("caldas_cafe");
  for (let i = 0; i < caldas.length; i++){
   const item = caldas[i];
   const option = document.createElement("option");
@@ -186,7 +244,61 @@ function preencherOpcoes(){
   selectcaldas.appendChild(option);
  }
   
-  const selectleites = document.getElementById("leites");
+  const selectleites_cafe = document.getElementById("leites_cafe");
+ for (let i = 0; i < leites.length; i++){
+  const item = leites[i];
+  const option = document.createElement("option");
+  option.value = item.id;
+  option.textContent = item.nome;
+  selectleites.appendChild(option);
+ }
+ 
+ const selectCopos_cha = document.getElementById("Copos_cha");
+ for (let i = 0; i < Copos.length; i++){
+  const item = Copos[i];
+  const option = document.createElement("option");
+  option.value = item.id;
+  option.textContent = item.nome;
+  selectCopos.appendChild(option);
+ }
+
+ const selectXicaras_cha = document.getElementById("Xicaras_cha");
+ for (let i = 0; i < Xicaras.length; i++){
+  const item = Xicaras[i];
+  const option = document.createElement("option");
+  option.value = item.id;
+  option.textContent = item.nome;
+  selectXicaras.appendChild(option);
+ }
+ 
+ const selectChocolate_cha = document.getElementById("Chocolate_cha");
+ for (let i = 0; i < Chocolate.length; i++){
+  const item = Chocolate[i];
+  const option = document.createElement("option");
+  option.value = item.id;
+  option.textContent = item.nome;
+  selectChocolate.appendChild(option);
+ }
+
+  const selectacucar_cha = document.getElementById("acucar_cha");
+ for (let i = 0; i < acucar.length; i++){
+  const item = acucar[i];
+  const option = document.createElement("option");
+  option.value = item.id;
+  option.textContent = item.nome;
+  selectacucar.appendChild(option);
+ }
+ 
+  const selectcaldas_cha = document.getElementById("caldas_cha");
+ for (let i = 0; i < caldas.length; i++){
+  const item = caldas[i];
+  const option = document.createElement("option");
+  option.value = item.id;
+  option.textContent = item.nome;
+  selectcaldas.appendChild(option);
+ }
+  
+  const selectleites_cha = document.getElementById("leites_cha");
  for (let i = 0; i < leites.length; i++){
   const item = leites[i];
   const option = document.createElement("option");
@@ -212,6 +324,16 @@ function preencherOpcoes(){
   option.textContent = item.nome;
   selectdonuts_D.appendChild(option);
  }
+
+ const selecttemperatura_cha = document.getElementById("temperatura_cha");
+ for (let i = 0; i < temperatura_cha.length; i++){
+  const item = temperatura_cha[i];
+  const option = document.createElement("option");
+  option.value = item.id;
+  option.textContent = item.nome;
+  selecttemperatura_cha.appendChild(option);
+ }
+
 
 }
 
@@ -245,9 +367,11 @@ function gerarRelatorio(){
   const caldasId = document.getElementById("caldas").value;
   const leitesId = document.getElementById("leites").value;
   const forma_pagamentoId = document.getElementById("forma_pagamento").value;
+  const observacoesId = document.getElementById("observacoes").value;
   const quantidade = document.getElementById("quantidade").value;
   const donuts_S_Id = document.getElementById("donuts_S").value;
   const donuts_D_Id = document.getElementById("donuts_D").value;
+  const temperatura_cha_Id = document.getElementById("temperatura_cha").value;
 
 
   var Cafe1 = procurarPorId(Cafe, CafeId);
@@ -261,11 +385,13 @@ function gerarRelatorio(){
   var leites1 = procurarPorId(leites, leitesId);
   var donuts_S1 = procurarPorId (donuts_S, donuts_S_Id);
   var donuts_D1 = procurarPorId (donuts_D, donuts_D_Id);
+  var temperatura_cha_1 = procurarPorId (temperatura_cha, temperatura_cha_Id);
 
 
   const custoCafe = Cafe1.preco * quantidade;
   const custoChas = Chas1.preco * quantidade;
   const custotemperatura = temperatura1.preco * quantidade;
+  const custotemperatura_cha = temperatura_cha_1.preco * quantidade;
   const custoCopos = Copos1.preco * quantidade;
   const custoXicaras = Xicaras1.preco * quantidade;
   const custoChocolate = Chocolate1.preco * quantidade; 
@@ -281,14 +407,16 @@ function gerarRelatorio(){
   <p><strong>Nome do cliente:</strong>${nome}<p>
   <p><strong>Café</strong> ${Cafe1.nome} - R$ ${custoCafe.toFixed(2)}</p>
   <p><strong>Chá:</strong> ${Chas1.nome} - R$ ${custoChas.toFixed(2)}</p>
-  <p><strong>Temperatura:</strong> ${temperatura1.nome} - R$ ${custotemperatura.toFixed(2)}</p>
-  <p><strong>Copos:</strong> ${Copos1.nome} - R$ ${custoCopos.toFixed(2)}</p>
+  <p><strong>Temperatura cafe :</strong> ${temperatura1.nome}</p>
+  <p><strong>Temperatura cha:</strong> ${temperatura_.nome}</p>
   <p><strong>Xicara:</strong> ${Xicaras1.nome} - R$ ${custoXicaras.toFixed(2)}</p>
   <p><strong>Açucar:</strong> ${acucar1.nome} - R$ ${custoacucar.toFixed(2)}</p>
   <p><strong>Chocolate:</strong> ${Chocolate1.nome} - R$ ${custoChocolate.toFixed(2)}</p>
   <p><strong>Caldas:</strong> ${caldas1.nome} - R$ ${custocaldas.toFixed(2)}</p>
   <p><strong>Leite:</strong> ${leites1.nome} - R$ ${custoleites.toFixed(2)}</p>
-  <p><strong>Comida:</strong> ${donuts_S1.nome} - R$ ${custodonuts_S.toFixed(2)} ${donuts_D1.nome} - R$ ${custodonuts_D.toFixed(2)}</p>
+  <p><strong>Comida salgado:</strong> ${donuts_S1.nome} - R$ ${custodonuts_S.toFixed(2)}</p> 
+  <p><strong>Comida doce:</strong> ${donuts_D1.nome} - R$ ${custodonuts_D.toFixed(2)}</p>
+  <p><strong>Observações:</strong> ${observacoesId}<p>
   <p><strong>Forma de pagamento:</strong> ${forma_pagamentoId}<p>
   <p><strong>Total:</strong> ${total.toFixed(2)}<p>
 `;
