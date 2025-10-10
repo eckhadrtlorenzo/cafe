@@ -359,7 +359,15 @@ function gerarRelatorio(){
   const nome = document.getElementById("nome").value;
   const CafeId = document.getElementById("Cafe").value;
   const ChasId = document.getElementById("Chas").value;
-  const temperaturaId = document.getElementById("temperatura").value;
+  const temperaturaId = document.getElementById("temperatura").value; 
+  const temperatura_cha_Id = document.getElementById("temperatura_cha").value;
+  const Copos_cafeId = document.getElementById("Copos").value;
+  const Xicaras_cafeId = document.getElementById("Xicaras").value;
+  const Chocolate_cafeId = document.getElementById("Chocolate").value;
+  const acucar_cafeId = document.getElementById("acucar").value;
+  const caldas_cafeId = document.getElementById("caldas").value;
+  const leites_cafeId = document.getElementById("leites").value;
+
   const CoposId = document.getElementById("Copos").value;
   const XicarasId = document.getElementById("Xicaras").value;
   const ChocolateId = document.getElementById("Chocolate").value;
@@ -371,7 +379,7 @@ function gerarRelatorio(){
   const quantidade = document.getElementById("quantidade").value;
   const donuts_S_Id = document.getElementById("donuts_S").value;
   const donuts_D_Id = document.getElementById("donuts_D").value;
-  const temperatura_cha_Id = document.getElementById("temperatura_cha").value;
+ 
 
 
   var Cafe1 = procurarPorId(Cafe, CafeId);
