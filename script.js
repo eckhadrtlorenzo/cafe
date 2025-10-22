@@ -400,12 +400,18 @@ function gerarRelatorio(){
   const custoChas = Chas1.preco * quantidade;
   const custotemperatura = temperatura1.preco * quantidade;
   const custotemperatura_cha = temperatura_cha_1.preco * quantidade;
-  const custoCopos = Copos1.preco * quantidade;
-  const custoXicaras = Xicaras1.preco * quantidade;
-  const custoChocolate = Chocolate1.preco * quantidade; 
-  const custoacucar = acucar1.preco * quantidade;
-  const custocaldas = caldas1.preco * quantidade;
-  const custoleites = leites1.preco * quantidade;
+  const custoCopos_cafe = Copos1.preco * quantidade;
+  const custoXicaras_cafe = Xicaras1.preco * quantidade;
+  const custoChocolate_cafe = Chocolate1.preco * quantidade; 
+  const custoacucar_cafe= acucar1.preco * quantidade;
+  const custocaldas_cafe = caldas1.preco * quantidade;
+  const custoleites_cafe = leites1.preco * quantidade;
+  const custoCopos_cha = Copos1.preco * quantidade;
+  const custoXicaras_cha = Xicaras1.preco * quantidade;
+  const custoChocolate_cha = Chocolate1.preco * quantidade; 
+  const custoacucar_cha = acucar1.preco * quantidade;
+  const custocaldas_cha = caldas1.preco * quantidade;
+  const custoleites_cha = leites1.preco * quantidade; 
   const custodonuts_S = donuts_S1.preco * quantidade;
   const custodonuts_D = donuts_D1.preco * quantidade;
   const total = custoCafe + custoChas + custoChocolate + custoCopos + custoXicaras + custoacucar + custocaldas + custoleites + custotemperatura + custodonuts_S + custodonuts_D;
@@ -417,6 +423,7 @@ function gerarRelatorio(){
   <p><strong>Chá:</strong> ${Chas1.nome} - R$ ${custoChas.toFixed(2)}</p>
   <p><strong>Temperatura cafe :</strong> ${temperatura1.nome}</p>
   <p><strong>Temperatura cha:</strong> ${temperatura_.nome}</p>
+  <p><strong>Copos:</strong>${Copos1.nome} - R$ ${custoCopos_cha}
   <p><strong>Xicara:</strong> ${Xicaras1.nome} - R$ ${custoXicaras.toFixed(2)}</p>
   <p><strong>Açucar:</strong> ${acucar1.nome} - R$ ${custoacucar.toFixed(2)}</p>
   <p><strong>Chocolate:</strong> ${Chocolate1.nome} - R$ ${custoChocolate.toFixed(2)}</p>
