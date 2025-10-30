@@ -180,16 +180,6 @@ function preencherOpcoes(){
   selectCafe.appendChild(option);
  }
 
-
- const selecttemperatura = document.getElementById("temperatura");
- for (let i = 0; i < temperatura.length; i++){
-  const item = temperatura[i];
-  const option = document.createElement("option");
-  option.value = item.id;
-  option.textContent = item.nome;
-  selecttemperatura.appendChild(option);
- }
-  
  const selectChas = document.getElementById("Chas");
  for (let i = 0; i < Chas.length; i++){
   const item = Chas[i];
@@ -198,113 +188,118 @@ function preencherOpcoes(){
   option.textContent = item.nome;
   selectChas.appendChild(option);
  }
- 
+
+
+ //adicionais do cafe
+  
  const selectCopos_cafe = document.getElementById("Copos_cafe");
- for (let i = 0; i < Copos.length; i++){
-  const item = Copos[i];
+ for (let i = 0; i < Copos_cafe.length; i++){
+  const item = Copo_cafe[i];
   const option = document.createElement("option");
   option.value = item.id;
   option.textContent = item.nome;
-  selectCopos.appendChild(option);
+  selectCopos_cafe.appendChild(option);
  }
 
  const selectXicaras_cafe = document.getElementById("Xicaras_cafe");
- for (let i = 0; i < Xicaras.length; i++){
-  const item = Xicaras[i];
+ for (let i = 0; i < Xicaras_cafe.length; i++){
+  const item = Xicaras_cafe[i];
   const option = document.createElement("option");
   option.value = item.id;
   option.textContent = item.nome;
-  selectXicaras.appendChild(option);
+  selectXicaras_cafe.appendChild(option);
  }
  
  const selectChocolate_cafe = document.getElementById("Chocolate_cafe");
- for (let i = 0; i < Chocolate.length; i++){
-  const item = Chocolate[i];
+ for (let i = 0; i < Chocolate_cafe.length; i++){
+  const item = Chocolate_cafe[i];
   const option = document.createElement("option");
   option.value = item.id;
   option.textContent = item.nome;
-  selectChocolate.appendChild(option);
+  selectChocolate_cafe.appendChild(option);
  }
 
   const selectacucar_cafe = document.getElementById("acucar_cafe");
- for (let i = 0; i < acucar.length; i++){
-  const item = acucar[i];
+ for (let i = 0; i < acucar_cafe.length; i++){
+  const item = acucar_cafe[i];
   const option = document.createElement("option");
   option.value = item.id;
   option.textContent = item.nome;
-  selectacucar.appendChild(option);
+  selectacucar_cafe.appendChild(option);
  }
  
   const selectcaldas_cafe = document.getElementById("caldas_cafe");
- for (let i = 0; i < caldas.length; i++){
-  const item = caldas[i];
+ for (let i = 0; i < caldas_cafe.length; i++){
+  const item = caldas_cafe[i];
   const option = document.createElement("option");
   option.value = item.id;
   option.textContent = item.nome;
-  selectcaldas.appendChild(option);
+  selectcaldas_cafe.appendChild(option);
  }
   
   const selectleites_cafe = document.getElementById("leites_cafe");
- for (let i = 0; i < leites.length; i++){
-  const item = leites[i];
+ for (let i = 0; i < leites_cafe.length; i++){
+  const item = leites_cafe[i];
   const option = document.createElement("option");
   option.value = item.id;
   option.textContent = item.nome;
-  selectleites.appendChild(option);
+  selectleites_cafe.appendChild(option);
  }
+
+ //adicionais do cha
  
  const selectCopos_cha = document.getElementById("Copos_cha");
  for (let i = 0; i < Copos.length; i++){
-  const item = Copos[i];
+  const item = Copos_cha[i];
   const option = document.createElement("option");
   option.value = item.id;
   option.textContent = item.nome;
-  selectCopos.appendChild(option);
+  selectCopos_cha.appendChild(option);
  }
 
  const selectXicaras_cha = document.getElementById("Xicaras_cha");
- for (let i = 0; i < Xicaras.length; i++){
-  const item = Xicaras[i];
+ for (let i = 0; i < Xicaras_cha.length; i++){
+  const item = Xicaras_cha[i];
   const option = document.createElement("option");
   option.value = item.id;
   option.textContent = item.nome;
-  selectXicaras.appendChild(option);
+  selectXicaras_cha.appendChild(option);
  }
  
  const selectChocolate_cha = document.getElementById("Chocolate_cha");
- for (let i = 0; i < Chocolate.length; i++){
-  const item = Chocolate[i];
+ for (let i = 0; i < Chocolate_cha.length; i++){
+  const item = Chocolate_cha[i];
   const option = document.createElement("option");
   option.value = item.id;
   option.textContent = item.nome;
-  selectChocolate.appendChild(option);
+  selectChocolate_cha.appendChild(option);
  }
 
   const selectacucar_cha = document.getElementById("acucar_cha");
- for (let i = 0; i < acucar.length; i++){
-  const item = acucar[i];
+ for (let i = 0; i < acucar_cha.length; i++){
+  const item = acucar_cha[i];
   const option = document.createElement("option");
   option.value = item.id;
   option.textContent = item.nome;
-  selectacucar.appendChild(option);
+  selectacucar_cha.appendChild(option);
  }
  
   const selectcaldas_cha = document.getElementById("caldas_cha");
- for (let i = 0; i < caldas.length; i++){
+ for (let i = 0; i < caldas_cha.length; i++){
   const item = caldas[i];
   const option = document.createElement("option");
   option.value = item.id;
   option.textContent = item.nome;
-  selectcaldas.appendChild(option);
+  selectcaldas_cha.appendChild(option);
  }
   
   const selectleites_cha = document.getElementById("leites_cha");
- for (let i = 0; i < leites.length; i++){
-  const item = leites[i];
+ for (let i = 0; i < leites_cha.length; i++){
+  const item = leites_cha[i];
   const option = document.createElement("option");
   option.value = item.id;
   option.textContent = item.nome;
-  selectleites.appendChild(option);
+  selectleites_cha.appendChild(option);
  }
 
  const selectdonuts_S = document.getElementById("donuts_S");
@@ -333,7 +328,14 @@ function preencherOpcoes(){
   option.textContent = item.nome;
   selecttemperatura_cha.appendChild(option);
  }
-
+const selecttemperatura = document.getElementById("temperatura");
+ for (let i = 0; i < temperatura.length; i++){
+  const item = temperatura[i];
+  const option = document.createElement("option");
+  option.value = item.id;
+  option.textContent = item.nome;
+  selecttemperatura.appendChild(option);
+ }
 
 }
 
@@ -390,6 +392,7 @@ function gerarRelatorio(){
   var Chocolate1 = procurarPorId(Chocolate, Chocolate_cafeId);
   var acucar1 = procurarPorId(acucar, acucar_cafeId);
   var caldas1 = procurarPorId(caldas, caldas_cafeId);
+  var leites1 = procurarPorId(leites, leites_cafeId);
   var Copos2 = procurarPorId(Copos, Copos_chaId);
   var Xicaras2 = procurarPorId(Xicaras, Xicaras_chaId);
   var Chocolate2 = procurarPorId(Chocolate, Chocolate_chaId);
@@ -411,15 +414,15 @@ function gerarRelatorio(){
   const custoacucar_cafe= acucar1.preco * quantidade;
   const custocaldas_cafe = caldas1.preco * quantidade;
   const custoleites_cafe = leites1.preco * quantidade;
-  const custoCopos_cha = Copos1.preco * quantidade;
-  const custoXicaras_cha = Xicaras1.preco * quantidade;
-  const custoChocolate_cha = Chocolate1.preco * quantidade; 
-  const custoacucar_cha = acucar1.preco * quantidade;
-  const custocaldas_cha = caldas1.preco * quantidade;
-  const custoleites_cha = leites1.preco * quantidade; 
+  const custoCopos_cha = Copos2.preco * quantidade;
+  const custoXicaras_cha = Xicaras2.preco * quantidade;
+  const custoChocolate_cha = Chocolate2.preco * quantidade; 
+  const custoacucar_cha = acucar2.preco * quantidade;
+  const custocaldas_cha = caldas2.preco * quantidade;
+  const custoleites_cha = leites2.preco * quantidade; 
   const custodonuts_S = donuts_S1.preco * quantidade;
   const custodonuts_D = donuts_D1.preco * quantidade;
-  const total = custoCafe + custoChas + custoChocolate + custoCopos + custoXicaras + custoacucar + custocaldas + custoleites + custotemperatura + custodonuts_S + custodonuts_D;
+  const total = custoCafe + custoChas + custoChocolate_cafe  +custoChocolate_cha + custoCopos_cafe + custoXicaras_cafe + custoacucar_cafe + custocaldas_cafe + custoleites_cafe +custoCopos_cha + custoXicaras_cha + custoacucar_cha + custocaldas_cha + custoleites_cha + custotemperatura +custotemperatura_cha + custodonuts_S + custodonuts_D;
 
   const relatorioHTML = `
   <h2>Pedido final</h2>
