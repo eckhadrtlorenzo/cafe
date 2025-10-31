@@ -89,7 +89,8 @@ const Copos_cafe = [
     { id:"leite_desnatado", nome: "leite desnatado", preco: 1.00 },
     { id:"leite__amendoas", nome: "leite de amendoas", preco: 2.00 }
 
-  ];const Copos_cha = [
+  ];
+  const Copos_cha = [
   { id:"Nenhum", nome:"Nenhum", preco: 0 },
   { id:"copo_50ml", nome: "Copo 50 ml", preco: 1.99 },
   { id:"copo_100ml", nome: "Copo 100ml ", preco: 2.50 },
@@ -194,7 +195,7 @@ function preencherOpcoes(){
   
  const selectCopos_cafe = document.getElementById("Copos_cafe");
  for (let i = 0; i < Copos_cafe.length; i++){
-  const item = Copo_cafe[i];
+  const item = Copos_cafe[i];
   const option = document.createElement("option");
   option.value = item.id;
   option.textContent = item.nome;
@@ -425,18 +426,25 @@ function gerarRelatorio(){
   const total = custoCafe + custoChas + custoChocolate_cafe  +custoChocolate_cha + custoCopos_cafe + custoXicaras_cafe + custoacucar_cafe + custocaldas_cafe + custoleites_cafe +custoCopos_cha + custoXicaras_cha + custoacucar_cha + custocaldas_cha + custoleites_cha + custotemperatura +custotemperatura_cha + custodonuts_S + custodonuts_D;
 
   const relatorioHTML = `
+  
   <h2>Pedido final</h2>
   <p><strong>Nome do cliente:</strong>${nome}<p>
   <p><strong>Café</strong> ${Cafe1.nome} - R$ ${custoCafe.toFixed(2)}</p>
   <p><strong>Chá:</strong> ${Chas1.nome} - R$ ${custoChas.toFixed(2)}</p>
   <p><strong>Temperatura cafe :</strong> ${temperatura1.nome}</p>
-  <p><strong>Temperatura cha:</strong> ${temperatura_.nome}</p>
-  <p><strong>Copos:</strong>${Copos1.nome} - R$ ${custoCopos_cha}
-  <p><strong>Xicara:</strong> ${Xicaras1.nome} - R$ ${custoXicaras.toFixed(2)}</p>
-  <p><strong>Açucar:</strong> ${acucar1.nome} - R$ ${custoacucar.toFixed(2)}</p>
-  <p><strong>Chocolate:</strong> ${Chocolate1.nome} - R$ ${custoChocolate.toFixed(2)}</p>
-  <p><strong>Caldas:</strong> ${caldas1.nome} - R$ ${custocaldas.toFixed(2)}</p>
-  <p><strong>Leite:</strong> ${leites1.nome} - R$ ${custoleites.toFixed(2)}</p>
+  <p><strong>Temperatura cha:</strong> ${temperatura2.nome}</p>
+  <p><strong>Copos:</strong>${Copos1.nome} - R$ ${custoCopos_cafe}
+  <p><strong>Xicara:</strong> ${Xicaras1.nome} - R$ ${custoXicaras_cafe.toFixed(2)}</p>
+  <p><strong>Açucar:</strong> ${acucar1.nome} - R$ ${custoacucar_cafe.toFixed(2)}</p>
+  <p><strong>Chocolate:</strong> ${Chocolate1.nome} - R$ ${custoChocolate_cafe.toFixed(2)}</p>
+  <p><strong>Caldas:</strong> ${caldas1.nome} - R$ ${custocaldas_cafe.toFixed(2)}</p>
+  <p><strong>Leite:</strong> ${leites1.nome} - R$ ${custoleites_cafe.toFixed(2)}</p>
+  <p><strong>Copos:</strong>${Copos2.nome} - R$ ${custoCopos_cha}
+  <p><strong>Xicara:</strong> ${Xicaras2.nome} - R$ ${custoXicaras_cha.toFixed(2)}</p>
+  <p><strong>Açucar:</strong> ${acucar2.nome} - R$ ${custoacucar_cha.toFixed(2)}</p>
+  <p><strong>Chocolate:</strong> ${Chocolate2.nome} - R$ ${custoChocolate_cha.toFixed(2)}</p>
+  <p><strong>Caldas:</strong> ${caldas2.nome} - R$ ${custocaldas_cha.toFixed(2)}</p>
+  <p><strong>Leite:</strong> ${leites2.nome} - R$ ${custoleites_cha.toFixed(2)}</p>
   <p><strong>Comida salgado:</strong> ${donuts_S1.nome} - R$ ${custodonuts_S.toFixed(2)}</p> 
   <p><strong>Comida doce:</strong> ${donuts_D1.nome} - R$ ${custodonuts_D.toFixed(2)}</p>
   <p><strong>Observações:</strong> ${observacoesId}<p>
